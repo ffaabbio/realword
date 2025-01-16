@@ -34,3 +34,5 @@ export default defineComponent({
   },
 });
 </script>
+
+<style src="../css/UserSignup.css"></style>

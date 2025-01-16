@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import apiClient from "@/api/api"; // Importation par défaut
+import apiClient from "@/api/api";
 
 export const useUserStore = defineStore("user", {
   state: () => ({
@@ -35,6 +35,20 @@ export const useUserStore = defineStore("user", {
         ] = `Token ${this.token}`;
       } catch (error) {
         console.error("Erreur lors de l'inscription:", error);
+      }
+    },
+
+    async updateUser(credentials: {
+      username: string;
+      email: string;
+      bio: string;
+      image: string;
+    }) {
+      try {
+        const response = await apiClient.put("/user", { user: credentials });
+        return response;
+      } catch (error) {
+        throw new Error("Erreur lors de la mise à jour du profil");
       }
     },
 

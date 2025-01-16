@@ -72,13 +72,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-.error {
-  color: red;
-  margin-top: 10px;
-}
-.success {
-  color: green;
-  margin-top: 10px;
-}
-</style>
+<style src="../css/UserLogin.css"></style>

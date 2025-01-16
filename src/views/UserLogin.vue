@@ -24,11 +24,9 @@ export default defineComponent({
       userStore.login({ email: email.value, password: password.value });
     };
 
-    return {
-      email,
-      password,
-      submit,
-    };
+    return { email, password, submit };
   },
 });
 </script>
+
+<style src="../css/UserLogin.css"></style>

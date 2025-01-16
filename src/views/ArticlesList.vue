@@ -73,3 +73,5 @@ export default defineComponent({
   font-weight: bold;
 }
 </style>
+
+<style src="../css/ArticleList.css"></style>

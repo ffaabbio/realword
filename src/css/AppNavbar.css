@@ -1,0 +1,72 @@
+/* styles.css */
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Couleur d'arrière-plan */
+    color: #333;
+  }
+  
+  /* Navbar container */
+  nav {
+    background-color: #ffffff; /* Fond blanc élégant */
+    padding: 15px 20px;
+    border-bottom: 2px solid #e5e5e5; /* Ligne de séparation subtile */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Navbar list */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Espacement élégant */
+  }
+  
+  /* Navbar items */
+  nav li {
+    display: inline;
+  }
+  
+  /* Navbar links */
+  nav a {
+    text-decoration: none;
+    color: #007bff; /* Bleu moderne */
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  nav a:hover {
+    background-color: #007bff; /* Fond bleu en hover */
+    color: #ffffff; /* Texte blanc */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Effet d'ombre */
+  }
+  
+  /* Active link style */
+  nav a.router-link-exact-active {
+    background-color: #0056b3; /* Bleu foncé */
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  

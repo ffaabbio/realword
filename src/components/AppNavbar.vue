@@ -15,3 +15,5 @@ export default defineComponent({
   name: "AppNavbar",
 });
 </script>
+
+<style src="../css/AppNavbar.css"></style>
